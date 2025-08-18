@@ -1,11 +1,8 @@
-import Header from './components/Header'
-import './App.css'
- 
-function App() {
+import Header from "./components/Header";
+import "./App.css";
 
-  return (
-    <Header/>
-  )
+function App() {
+  return <Header />;
 }
 
-export default App
+export default App;
