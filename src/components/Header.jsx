@@ -1,10 +1,12 @@
-// import logo from './assets/logo.png';
+import logo from '../assets/quiz-logo.png';
 export default function Header() {
   return (
     <header>
-      <h1>ReactQuiz</h1>
+      <div>
+      <img src={logo} alt="Quiz App Logo" />
+      <h1>React Quiz</h1>
       <h2>First Maryam's Project</h2>
-      {/* <img src={logo} alt="Quiz App Logo" /> */}
+      </div>
     </header>
   );
 }
