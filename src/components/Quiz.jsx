@@ -1,13 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import QUESTIONS from "../questions";
+import quizCompleteImg from "../assets/quiz-complete.png";
 export default function Quiz() {
   const [userAnswers, setuserAnswers] = useState([]);
   const activeQuestionIndex = userAnswers.length;
+  const quizIsComplete = activeQuestionIndex === QUESTIONS.length;
+
   function handleSelectAnswer(selectedAnswer) {
     setuserAnswers((prevUserAnswers) => {
       return [...prevUserAnswers, selectedAnswer];
     });
   }
+  if (quizIsComplete) {
+    return (
+      <div id="summary">
+        <img src= {quizCompleteImg} alt="Trophy Icon" />
+        <h2>quiz completed!</h2>
+      </div>
+
+    )
+  }
+  const shuffledAnswers = [...QUESTIONS [activeQuestionIndex].answers];
+  shuffledAnswers.sort(() => Math.random() - 0.5);
+
 
   return (
     <div id="quiz">
@@ -24,3 +39,7 @@ export default function Quiz() {
     </div>
   );
 }
+
+
+// useEffect
+// setInterval
