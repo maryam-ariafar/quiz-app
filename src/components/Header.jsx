@@ -4,14 +4,15 @@ export default function Header() {
     <header>
       <div className='container'>
         <div>
-          <img src={logo} alt="React Quiz App" />
-          <h1>React Quiz</h1>
+          <img className='logo' src={logo} alt="React Quiz App"/>
+          <h1>REACT QUIZ</h1>
         </div>
         <div>
           <div className='questions'></div>
           <div className='answers'></div>
         </div>
       </div>
+      <img src="main-background" alt="" />
     </header>
   );
   

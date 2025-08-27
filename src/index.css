@@ -36,8 +36,12 @@ body {
 } */
 
 button {
-  border-radius: 8px;
-  border: px solid transparent;
+  display: flex;
+    width: 750px;
+    height: 55px;
+  justify-content: center;
+  border-radius: 40px;
+  border: 0px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -45,6 +49,7 @@ button {
   background-color: #6cd6fa;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin: 4px;
 }
 button:hover {
   border-color: #646cff;
@@ -53,7 +58,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
