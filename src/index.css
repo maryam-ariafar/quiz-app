@@ -28,6 +28,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: url(assets/quiz-background.png) no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* test {
@@ -37,8 +39,8 @@ body {
 
 button {
   display: flex;
-    width: 750px;
-    height: 55px;
+  width: 750px;
+  height: 55px;
   justify-content: center;
   border-radius: 40px;
   border: 0px solid transparent;

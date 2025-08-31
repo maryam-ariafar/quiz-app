@@ -12,7 +12,6 @@ export default function Header() {
           <div className='answers'></div>
         </div>
       </div>
-      <img src="main-background" alt="" />
     </header>
   );
   
