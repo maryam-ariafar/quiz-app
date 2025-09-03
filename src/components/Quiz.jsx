@@ -37,7 +37,11 @@ export default function Quiz() {
   return (
     <div id="quiz">
       <div className="question">
-        <QuestionTimer timeOut={100000} />
+        <QuestionTimer
+          key={activeQuestionIndex}
+          timeOut={20000}
+          onTimeOut={handleSkipAnswer}
+        />
         <h2>{QUESTIONS[activeQuestionIndex].text}</h2>
         <ul className="answers">
           {QUESTIONS[activeQuestionIndex].answers.map((answer) => (
