@@ -1,8 +1,12 @@
+import logo from '../assets/quiz-logo.png';
+
 export default function Start({onStart}) {
 
   return (
     <div id="start">
-      <h2>welcome to the React Quiz App</h2>
+      {/* <img id='logo' src={logo} alt="logo"/> */}
+      <h1>welcome to the React Quiz App</h1>
+      <hr />
       <p>
         We have designed 7 questions for you, each question has four options; You
         have only 20 seconds to answer each question. After two seconds of
