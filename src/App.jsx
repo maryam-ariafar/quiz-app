@@ -1,11 +1,18 @@
+import { useState } from "react";
+
 import Start from "./components/Start.jsx";
 import Header from "./components/Header";
 import Quiz from "./components/Quiz.jsx";
 
 function App() {
+    const [started, setStarted] = useState(false);
+
+    if (!started) {
+      return <Start onStart={() => setStarted(true)} />
+    } else {
+
   return (
     <>
-      <Start />
       <Header />
       <main>
         <Quiz />
@@ -13,5 +20,5 @@ function App() {
     </>
   );
 }
-
+}
 export default App;

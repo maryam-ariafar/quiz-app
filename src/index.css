@@ -190,6 +190,14 @@ header h1 {
   color: #2c203d;
 }
 
+#start{
+  text-align: center;
+}
+
+#start-btn {
+  cursor: pointer;
+}
+
 #skip-action {
   margin-top: 2rem;
 }
